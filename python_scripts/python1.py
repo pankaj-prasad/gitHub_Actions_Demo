@@ -1,2 +1,2 @@
 # simple python script
-print("this is hellow worrl for python")
+print("this is hellow world for python build")
