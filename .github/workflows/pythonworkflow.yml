@@ -1,4 +1,4 @@
-name : python 
+name : my python workflow 
 on:
  push:
    branches: [main]
