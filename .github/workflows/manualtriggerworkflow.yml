@@ -2,7 +2,8 @@ name: Manually trigger Workflow workflow_dispatch
 
 on:
   workflow_dispatch:
-
+env:
+  greetings: hello world
 jobs:
   example_job:
     runs-on: ubuntu-latest
@@ -10,4 +11,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run a script
-        run: echo "This is a manually triggered workflow."
+        run: echo "$greetings, This is a manually triggered workflow."
