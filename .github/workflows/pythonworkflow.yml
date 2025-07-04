@@ -5,7 +5,7 @@ on:
  pull_request:
    branches: [main]
 env:
-   DAY_OF_WEEK: Thursday    
+   DAY_OF_WEEK: Friday    
 jobs:
   run-python-script:
     runs-on: ubuntu-latest
