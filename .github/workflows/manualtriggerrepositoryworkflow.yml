@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print message
-        run: echo "Repository dispatch triggered with event: ${{ github.event.action }}"
+        run: 'echo "Repository dispatch triggered with event: ${{ github.event.action }}"'
