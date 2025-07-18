@@ -36,7 +36,7 @@ jobs:
           #annotations: ${{ steps.meta.outputs.annotations }}
           #provenance: true
           #sbom: true
-          context: .
-          file: ./Dockerfile
+          context: ./docker_actions
+          file: ./docker_actions/Dockerfile
           push: true
           tags: yourdockerhubusername/your-image-name:latest
