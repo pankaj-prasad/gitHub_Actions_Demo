@@ -2,10 +2,10 @@ FROM openjdk:8-jdk-alpine as build
 COPY . /usr/app
 WORKDIR /usr/app
 #RUN apk update && apk install dos2unix
-RUN apk add --no-cache dos2unix
-RUN dos2unix mvnw
-RUN chmod +x mvnw
-RUN chmod +x mvnw && ./mvnw clean package
+#RUN apk add --no-cache dos2unix
+#RUN dos2unix mvnw
+#RUN chmod +x mvnw
+#RUN chmod +x mvnw && ./mvnw clean package
 
 FROM openjdk:8-jre-alpine
 COPY --from=build /usr/app/target/*.jar app.jar
