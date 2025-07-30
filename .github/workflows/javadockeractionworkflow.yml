@@ -10,7 +10,7 @@ on:
       
 jobs:
   build:
-    name: Build & push docker image
+    name: Build & push java docker image
     runs-on: ubuntu-latest
     env:
       IMG_NAME: ${{ github.repository }}
