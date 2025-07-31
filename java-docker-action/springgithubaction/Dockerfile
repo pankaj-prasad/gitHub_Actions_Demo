@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine as build
+FROM eclipse-temurin:17-alpine as build
 # Add dos2unix for line ending fixes
 RUN apk add --no-cache dos2unix
 WORKDIR /usr/app
