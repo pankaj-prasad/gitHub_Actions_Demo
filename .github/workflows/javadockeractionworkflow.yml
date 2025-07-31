@@ -43,6 +43,9 @@ jobs:
         uses: docker/login-action@v3
         with:
           username: ${{ vars.DOCKER_USERNAME }}
+          run : |
+             echo '${{ vars.DOCKER_USERNAME }}'
+            
           password: ${{ secrets.DOCKER_PASSWORD }}
       #- name: Build with Maven
         #run: ./mvnw clean package
