@@ -49,7 +49,7 @@ jobs:
      # - name: List files
       #  run: ls -la target
 
-      - name: Build and push Docker image to registory
+      - name: Build and push Docker image to docker hub registory
         uses: docker/build-push-action@v5
         with:
           context: ./java-docker-action/springgithubaction
