@@ -55,6 +55,6 @@ jobs:
           context: ./java-docker-action/springgithubaction
           #push: ${{ github.event.base_ref =='refs/heads/main' && github.ref_type == 'tag' && !startsWith(github.ref, 'refs/tags/v0.')}}
           push: true
-          #tags: ${{ steps.metadata.outputs.tags }}
-          tags: oct2019/my-image:latest
-          #labels: ${{ steps.metadata.outputs.labels }}
+          tags: ${{ steps.metadata.outputs.tags }}
+          #tags: oct2019/my-image:latest
+          labels: ${{ steps.metadata.outputs.labels }}
